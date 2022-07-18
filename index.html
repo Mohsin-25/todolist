@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo list</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>Welcome To The <span class="todo">ToDo's</span> List</h1>
+        <span class="head">Title</span>
+        <input class="titbox" id="title" type="text" name="Title" />
+        <span>(Add an item to the list)</span><br /><br />
+        <span class="head">Description</span><br /><textarea class="desbox" id="description" name="textarea"
+            rows="3"></textarea><br />
+        <input class="btn" id="add" type="button" value="Add To List" />
+        <input class="btn" id="clear" type="button" value="Clear The List" onclick="clearstorage()" />
+
+        <h1>Your List</h1>
+        <table style="width: 100%">
+            <thead>
+                <tr>
+                    <th style="width: 10%">Sr. No.</th>
+                    <th style="width: 30%">Title</th>
+                    <th style="width: 50%">Description</th>
+                    <th style="width: 10%">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button class="btn">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
